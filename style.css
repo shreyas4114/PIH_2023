@@ -1,190 +1,53 @@
-.home-page {
-    background-color: #ffffff;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 100%;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #ececec;
 }
 
-.home-page .overlap-group-wrapper {
-    background-color: #ffffff;
-    width: 1440px;
-    height: 1200px;
+/*------------ Login container ------------*/
+
+.box-area {
+    width: 930px;
 }
 
-.home-page .overlap-group {
-    position: relative;
-    height: 1200px;
-    background-image: url(./img/background.svg);
-    background-size: 100% 100%;
+/*------------ Right box ------------*/
+
+.right-box {
+    padding: 40px 30px 40px 40px;
 }
 
-.home-page .sign-in {
-    display: inline-flex;
-    align-items: flex-start;
-    gap: 10px;
-    padding: 9px 18px;
-    position: absolute;
-    top: 26px;
-    left: 1228px;
-    border-radius: 40px;
-    border: 2px solid;
-    border-color: #00000033;
-}
+/*------------ Custom Placeholder ------------*/
 
-.home-page .text-wrapper {
-    position: relative;
-    width: fit-content;
-    margin-top: -2px;
-    font-family: "Source Sans Pro-Bold", Helvetica;
-    font-weight: 700;
-    color: #000000;
-    font-size: 14px;
-    text-align: right;
-    letter-spacing: -0.42px;
-    line-height: 22.2px;
-    white-space: nowrap;
-}
-
-.home-page .group {
-    position: absolute;
-    width: 827px;
-    height: 309px;
-    top: 175px;
-    left: 294px;
-}
-
-.home-page .div {
-    position: absolute;
-    width: 823px;
-    top: 0;
-    left: 0;
-    font-family: "Poppins-Bold", Helvetica;
-    font-weight: 700;
-    color: #000000;
-    font-size: 50px;
-    text-align: center;
-    letter-spacing: -1.5px;
-    line-height: 58.9px;
-}
-
-.home-page .whether-you-re {
-    position: absolute;
-    width: 618px;
-    top: 130px;
-    left: 103px;
-    font-family: "Source Sans Pro-Regular", Helvetica;
-    font-weight: 400;
-    color: #000000;
+::placeholder {
     font-size: 16px;
-    text-align: center;
-    letter-spacing: -0.48px;
-    line-height: 25.4px;
 }
 
-.home-page .element-basic-camera {
-    position: absolute;
-    width: 59px;
-    height: 59px;
-    top: 39px;
-    left: 64px;
+.rounded-4 {
+    border-radius: 20px;
 }
 
-.home-page .icon {
-    position: absolute;
-    width: 54px;
-    height: 44px;
-    top: 7px;
-    left: 2px;
+.rounded-5 {
+    border-radius: 30px;
 }
 
-.home-page .text-wrapper-2 {
-    position: absolute;
-    top: 45px;
-    left: 134px;
-    font-family: "Poppins-Bold", Helvetica;
-    font-weight: 700;
-    color: #000000;
-    font-size: 38px;
-    letter-spacing: -1.52px;
-    line-height: 54.6px;
-    white-space: nowrap;
-}
 
-.home-page .element-menu {
-    position: absolute;
-    width: 32px;
-    height: 32px;
-    top: 30px;
-    left: 1343px;
-}
+/*------------ For small screens------------*/
 
-.home-page .img {
-    position: absolute;
-    width: 24px;
-    height: 20px;
-    top: 6px;
-    left: 4px;
-}
+@media only screen and (max-width: 768px) {
 
-.home-page .sample-images {
-    position: absolute;
-    width: 1375px;
-    height: 533px;
-    top: 517px;
-    left: 34px;
-}
+    .box-area {
+        margin: 0 10px;
 
-.home-page .image-holder {
-    position: absolute;
-    width: 431px;
-    height: 245px;
-    top: 0;
-    left: 0;
-    object-fit: cover;
-}
+    }
 
-.home-page .image-holder-2 {
-    top: 288px;
-    left: 0;
-    position: absolute;
-    width: 431px;
-    height: 245px;
-    object-fit: cover;
-}
+    .left-box {
+        height: 100px;
+        overflow: hidden;
+    }
 
-.home-page .image-holder-3 {
-    top: 0;
-    left: 470px;
-    position: absolute;
-    width: 431px;
-    height: 245px;
-    object-fit: cover;
-}
+    .right-box {
+        padding: 20px;
+    }
 
-.home-page .image-holder-4 {
-    top: 288px;
-    left: 470px;
-    position: absolute;
-    width: 431px;
-    height: 245px;
-    object-fit: cover;
-}
-
-.home-page .image-holder-5 {
-    top: 0;
-    left: 944px;
-    position: absolute;
-    width: 431px;
-    height: 245px;
-    object-fit: cover;
-}
-
-.home-page .image-holder-6 {
-    top: 288px;
-    left: 944px;
-    position: absolute;
-    width: 431px;
-    height: 245px;
-    object-fit: cover;
 }
