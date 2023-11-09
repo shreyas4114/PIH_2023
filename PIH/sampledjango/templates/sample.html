@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Welcome To Gallery Guys !!!
+    {% for x in list %} <!--For loop for printing data in list and tables-->
+    <div>{{x}} </div>
+    {% endfor %}
+    
+    <table border="1" cellpadding="10"> 
+        <tr>
+            <th>Name</th>
+            <th>Ph.No.</th>
+        </tr>
+
+        {% for y in info %}
+        <tr>
+            <td>{{y.name}} </td>
+            <td>{{y.ph}} </td>
+            
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
